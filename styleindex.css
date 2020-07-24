@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: arial, sans-serif;
+    font-size: 100%;
+    margin: 3em;
+    background: rgb(77, 5, 87);
+    color: #fff;
+  }
+  
+  #heading {
+    position: sticky;
+    top: 0;
+    background-color: rgb(165, 14, 120);
+    z-index: 6;
+    padding: 10px 5px;
+    margin-left: 15px;
+  }
+  
+  #no-note {
+    padding: 100px 0px;
+    text-align: center;
+  }
+  
+  #ts {
+    left: 0;
+    bottom: 0;
+    margin-left: 15px;
+    color: #ffd31d;
+  }
+  
+  .inputText {
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #bd075c;
+    width: 60%;
+    margin: 15px;
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .btnAdd {
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    border: 3px solid #bd075c;
+    background-color: #ffd31d;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .btnAdd:active {
+    border: 3px solid rgb(172, 8, 117);
+    box-shadow: inset 0 0 5px #000000;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      margin-top: 1em;
+    }
+    #new-note-title-input,
+    #new-note-body-input {
+      display: block;
+      width: 90%;
+      margin-left: 0px;
+    }
+  
+    #heading {
+      margin-left: 0px;
+    }
+  
+    .btn {
+      margin-left: 0px;
+    }
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylelogin.css">
+    <title>
+        PassCode Keeper!
+    </title>
+</head>
+<body>
+    <div id="heading">
+        <h1>PassCode Keeper!</h1>
+        <h4>Your Passwords in safe hands :)</h4>
+    </div>
+    <div class="loginform">
+        <label class="labeltext">Username :</label>
+            <input
+                type="email"
+                name="username"
+                id="username"
+                class="loginText"
+                placeholder="email-id"
+                autocomplete="on"
+                required
+                autofocus
+            /><br>
+        <label class="labeltext">Password :</label>
+            <input
+                type="password"
+                name="userpass"
+                id="userpass"
+                class="loginText"
+                placeholder="Your Password"
+                required
+            /><br>
+        <button class="btnAdd" id="signup"><span>NEW-USER</span></button>
+        <button class="btnAdd" id="signin"><span>LOGIN-HERE</span></button>
+        <button class="btnAdd-hide" id="logout"><span>LOGOUT</span></button>
+    </div>
+    <br>
+    <p id="ts">@aditimahajan1230</p>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="./app.js"></script>
+
+</body>
+</html>

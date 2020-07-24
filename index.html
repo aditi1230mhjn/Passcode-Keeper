@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styleindex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        PassCode Keeper!
+    </title>
+</head>
+<body>
+    <div id="heading">
+        <h1>PassCode Keeper!</h1>
+        <h4>Your Passwords in safe hands :)</h4>
+    </div>
+    <div id="form">
+        <form id="inputform">
+            <input
+                type="text"
+                name="title"
+                id="notetitle"
+                class="inputText"
+                placeholder="Title"
+                autocomplete="off"
+                required
+                autofocus
+            /><br>
+            <input
+                type="text"
+                name="account"
+                id="accountused"
+                class="inputText"
+                placeholder="Account ID"
+                autocomplete="on"
+            /><br>
+            <input
+                type="text"
+                name="password"
+                id="password"
+                class="inputText"
+                placeholder="Password"
+                autocomplete="off"
+            /><br>
+            <input
+                type="text"
+                name="body"
+                id="body"
+                class="inputText"
+                placeholder="Description"
+                autocomplete="on"
+            />
+            <br>
+            <button type="submit" class="btnAdd" onclick="newPasscode()"><span>CREATE</span></button>
+        </form>
+    </div>
+    <h3 id="no-note">No Note Yet!<br>Create your First Note!</h3>
+    <ul id="notes"></ul>
+
+    <p id="ts">@aditimahajan1230</p>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="/myscript.js"></script>
+</body>
+</html>
